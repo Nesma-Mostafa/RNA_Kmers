@@ -1,6 +1,6 @@
 #install tensorFlow
 $ sudo apt-get install python3-pip python3-dev python-virtualenv
-$ virtualenv --system-site-packages -p python3  targetDirectory
+$ virtualenv --system-site-packages -p python3  tensorflow
 $ source ~/tensorflow/bin/activate
 (tensorflow)$ easy_install -U pip
 (tensorflow)$ pip3 install --upgrade tensorflow
