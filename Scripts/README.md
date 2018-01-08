@@ -1,7 +1,7 @@
 # **Scripts**
 
 ###### In this ```README.md``` file,the workflow of each script will be mentioned breifly
-hear tensorflow has to be installed before keras but u may install jellyfish before both of them as it is independant.
+ ```Install_Tensorflow.sh``` has to be excuted before ```Install_Keras.sh``` but ```install_JellyFish.sh``` may be excuted before both of them or after as it is independant so it is prefered to excute the scripts in the following order.
 
 - ```Install_Ternsoflow.sh``` The first script to be excuted is this one, the content of this script is:                                Here tensorflow is installed with virtual environmentas the following     
   - first of all the virtual environment and PIP should be installed
@@ -19,5 +19,14 @@ hear tensorflow has to be installed before keras but u may install jellyfish bef
   - install keras
   - if keras.hson is not exist in the /keras/keras.json Keras has to be imported 
   - import keras to make sure it is successfully installed.
+  
+- ```install_JellyFish.sh```  this script to install jellyfish 
+      just issuing the 2 lines which will install it directly
+      
+- ```Count_Kmers.sh``` this script for using the jellyfish to count kmers and get the frequencies so it must be excuted in the same order
+ - divide the fasta dataset file into k-mers **reads.fasta** shoud be replaced with the name of the datasetfile
+ - get the histogram of k-mers frequencies and write the output to file **OutputFile** may be replaced with any file name
+ - it is optional and may be commented by **;** or **#**, it is only for search on specific k-mer to make sure that the returned   k-mers is correct
+
   
   
