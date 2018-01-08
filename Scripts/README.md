@@ -1,6 +1,6 @@
 # **Scripts**
 
-###### In this README.md file,the workflow of each script will be mentioned breifly
+###### In this ```README.md``` file,the workflow of each script will be mentioned breifly
 
 -Install_Ternsoflow.sh The first script to be excuted is this one, the content of this script is:
      Here tensorflow is installed with virtual environmentas the following
