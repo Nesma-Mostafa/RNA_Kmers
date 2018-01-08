@@ -24,9 +24,13 @@
       just issuing the 2 lines which will install it directly
       
 - ```Count_Kmers.sh``` this script for using the jellyfish to count kmers and get the frequencies so it must be excuted in the same order
- - divide the fasta dataset file into k-mers **reads.fasta** shoud be replaced with the name of the datasetfile
- - get the histogram of k-mers frequencies and write the output to file **OutputFile** may be replaced with any file name
- - it is optional and may be commented by **;** or **#**, it is only for search on specific k-mer to make sure that the returned   k-mers is correct
+  - divide the fasta dataset file into k-mers **reads.fasta** shoud be replaced with the name of the datasetfile
+  - get the histogram of k-mers frequencies and write the output to file **OutputFile** may be replaced with any file name
+  - it is optional and may be commented by **;** or **#**, it is only for search on specific k-mer to make sure that the returned    k-mers is correct
 
-  
+-``` 	Filter_Kmer_Histogram.py```  this script to filter the k-mers and neglect the k-mers with 1 frequency
+  - open the file of k-mers histogram, **your_Kmers_HistogramFile** should be replaced with the name of the histogram file.
+  - read lines of the file and put it in list
+  - traverse on the list and split each line into 2 strings the first for the kmer and the second for the frequency and select the lines with frequency more than one.
+  - open another file to write the result in it, **yourOutputFile.txt** should be created in the same of the histogram file and replaced with any name.
   
