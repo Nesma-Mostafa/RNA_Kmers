@@ -5,7 +5,6 @@
  $ sudo apt-get install python3-pip python3-dev python-virtualenv
 
 # 2- Create a virtualenv environment 
-# where targetDirectory specifies the top of the virtualenv tree.
 # assumed that targetDirectory is ~/tensorflow, but you may choose any directory.
 $ virtualenv --system-site-packages -p python3  targetDirectory
 
