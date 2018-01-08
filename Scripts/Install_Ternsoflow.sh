@@ -20,6 +20,11 @@ $ source ~/tensorflow/bin/activate
 # 6- validate the installation.
 $ source ~/tensorflow/bin/activate 
 
+# 7- import Tensorflow to make sure it is successfully installed
+$ python
+>>> import tensorflow as tf
+>>> quit()
+
 
 
 
