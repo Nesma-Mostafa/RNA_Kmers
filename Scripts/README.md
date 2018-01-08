@@ -12,7 +12,7 @@ hear tensorflow has to be installed before keras but u may install jellyfish bef
   - activate **tensorflow** and each time **tensorflow** will be used it will must be activated.
   - to make sure that tensorflow is activated import tensorflow
   
--```Install_Keras.sh``` The Secound one is this script as keras used the tensorflow as backend, The content of the script
+- ```Install_Keras.sh``` The Secound one is this script as keras used the tensorflow as backend, The content of the script
   - virtual environment has to be created to install keras in it
   - work on the created virtual environment
   - install some python dependencies
