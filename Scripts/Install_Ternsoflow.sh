@@ -2,28 +2,23 @@
 # for more information check here https://www.tensorflow.org/install/install_linux
 
 # 1- Install pip and virtualenv 
- $ sudo apt-get install python3-pip python3-dev python-virtualenv
+  sudo apt-get install python3-pip python3-dev python-virtualenv
 
 # 2- Create a virtualenv environment 
 # assumed that targetDirectory is ~/tensorflow, but you may choose any directory.
-$ virtualenv --system-site-packages -p python3  targetDirectory
+ virtualenv --system-site-packages -p python3  tensorflow
 
 # 3- Activate the virtualenv environment by issuing one of the following commands
-$ source ~/tensorflow/bin/activate
+ source ~/tensorflow/bin/activate
 
 # 4- Ensure pip ≥8.1 is installed
-(tensorflow)$ easy_install -U pip
+ easy_install -U pip
 
 # 5- install TensorFlow in the active virtualenv environment
-(tensorflow)$ pip3 install --upgrade tensorflow    
+ pip3 install --upgrade tensorflow    
 
 # 6- validate the installation.
-$ source ~/tensorflow/bin/activate 
-
-# 7- import Tensorflow to make sure it is successfully installed
-$ python
->>> import tensorflow as tf
->>> quit()
+ source ~/tensorflow/bin/activate 
 
 
 
