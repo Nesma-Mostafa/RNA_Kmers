@@ -5,9 +5,6 @@ source ~/tensorflow/bin/activate
 easy_install -U pip
 pip3 install --upgrade tensorflow
 source ~/tensorflow/bin/activate 
- python
->>> import tensorflow as tf
->>> quit()
 
 #install Keras
  mkvirtualenv keras_tf
@@ -18,10 +15,7 @@ source ~/tensorflow/bin/activate
  pip install h5py
  pip install keras
  workon keras_tf
- python
->>> import keras
->>> quit()
-
+ 
 #install jellyFish
 sudo apt-get update
 sudo apt-get install jellyfish
