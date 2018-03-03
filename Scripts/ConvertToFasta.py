@@ -18,6 +18,7 @@ for filename in os.listdir(os.getcwd()):
 	if(len(filename.split('.'))==3 and filename.split('.')[2]=="gz"):
 		str.append(filename)
                 data_txt.append(filename.split('.')[0]+".txt")
+                
 #print(data_txt)
                 
 #for i in str:
@@ -30,10 +31,10 @@ c=0
 for fn in data_txt:
 	with open(fn, 'r+') as f:
 		 content = f.read()
-                 print(content)
-                 f.seek(0, 0)
-                 f.write("> SEQUENCE1" + '\n' + content)
-                 f.close()
-                 os.rename(fn, fn.split('.')[0]+".fasta")
-       
+		 for i in content:
+			 f.seek(c, 0)
+			 f.write("> SEQ" + c + '\n' + content[c])
+			 c+=1
+		 f.close()
+		 os.rename(fn, fn.split('.')[0]+".fasta")      
                
