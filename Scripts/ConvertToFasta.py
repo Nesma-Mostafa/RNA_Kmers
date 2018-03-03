@@ -26,14 +26,14 @@ for filename in os.listdir(os.getcwd()):
         #fantasy_zip.extract(data_txt[c], os.getcwd())
         #fantasy_zip.close()
         #c+=1 
-
+fn = "/home/nesma/Documents/Dataset_original/xx/GSM532872_G652T.txt"
 c=0
 for fn in data_txt:
 	with open(fn, 'r+') as f:
-		 content = f.read()
+		 content = f.read().splitlines()
+		 f.truncate()
 		 for i in content:
-			 f.seek(c, 0)
-			 f.write("> SEQ" + c + '\n' + content[c])
+			 f.write("> SEQ" + str(c) +" "+ content[c]+'\n' )
 			 c+=1
 		 f.close()
 		 os.rename(fn, fn.split('.')[0]+".fasta")      
