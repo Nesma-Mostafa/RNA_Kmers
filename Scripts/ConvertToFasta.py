@@ -26,7 +26,6 @@ for filename in os.listdir(os.getcwd()):
         #fantasy_zip.extract(data_txt[c], os.getcwd())
         #fantasy_zip.close()
         #c+=1 
-fn = "/home/nesma/Documents/Dataset_original/xx/GSM532872_G652T.txt"
 c=0
 for fn in data_txt:
 	with open(fn, 'r+') as f:
