@@ -30,10 +30,11 @@ c=0
 for fn in data_txt:
 	with open(fn, 'r+') as f:
 		 content = f.read().splitlines()
+		 f.seek(0)
 		 f.truncate()
 		 for i in content:
 			 f.write("> SEQ" + str(c) +" "+ content[c]+'\n' )
 			 c+=1
 		 f.close()
-		 os.rename(fn, fn.split('.')[0]+".fasta")      
+		 os.rename(fn, fn.split('.')[0]+".fasta")   
                
