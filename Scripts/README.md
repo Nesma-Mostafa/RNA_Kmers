@@ -34,3 +34,9 @@
   - traverse on the list and split each line into 2 strings the first for the kmer and the second for the frequency and select the lines with frequency more than one.
   - open another file to write the result in it, **yourOutputFile.txt** should be created in the same of the histogram file and replaced with any name.
   
+- ```ConvertToFasta.py``` this script for converting the data set file to fasta files.
+  - reading all the zipped files in the folder
+  - unzipped them
+  - adding headers to the files
+  - change the extension to .fasta
+  
