@@ -51,3 +51,6 @@
   - repeat the kmer in the followed line by the stored frequency
   - save the new file with the original one name followed by 1
   
+- ```MergeNormaData.py``` this script for merge all the normal data files into one file with lable 0
+
+- ```MergeTumerData.py``` this script for merge all the Tumer data files into one file with lable 1
