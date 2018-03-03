@@ -9,11 +9,11 @@ source ~/tensorflow/bin/activate
 #install Keras
  mkvirtualenv keras_tf
  workon <keras_tf>
- pip install numpy scipy
- pip install scikit-learn
- pip install pillow
- pip install h5py
- pip install keras
+ pip3 install numpy scipy
+ pip3 install scikit-learn
+ pip3 install pillow
+ pip3 install h5py
+ pip3 install keras
  workon keras_tf
  
 #install jellyFish
