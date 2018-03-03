@@ -40,3 +40,14 @@
   - adding headers to the files
   - change the extension to .fasta
   
+- ```CatchKmerCounts.sh``` this script for catching the kmers with frequencies.
+  - read each .fasta file in the folder
+  - apply jelly fish to get the kmers
+  - write the kmers with the frequencies
+  
+- ```repeatKmers.py``` this script to get file with all kmers repeated with it's frequency 
+  - read each .fa file
+  - store the frequency of the first line
+  - repeat the kmer in the followed line by the stored frequency
+  - save the new file with the original one name followed by 1
+  
