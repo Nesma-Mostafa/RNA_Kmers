@@ -54,3 +54,5 @@
 - ```MergeNormaData.py``` this script for merge all the normal data files into one file with lable 0
 
 - ```MergeTumerData.py``` this script for merge all the Tumer data files into one file with lable 1
+
+-```MergeAllFiles``` this script to merge all the normal labeled dataset file and the tumer labeled dataset file into one file.
