@@ -1,5 +1,5 @@
 import os
-with open (filename.split('.')[0]+"NormalData.txt",'w') as rs:
+with open (filename.split('.')[0]+"dataset.txt",'w') as rs:
 	for filename in os.listdir(os.getcwd()):
 		if(len(filename.split('.'))==2 and filename.split('.')[1]=="txt"):
 			 with open (filename) as f:
