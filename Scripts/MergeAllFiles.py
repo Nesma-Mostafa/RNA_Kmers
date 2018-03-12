@@ -1,6 +1,6 @@
 file_ =[]
-file_.append("Normal.txt")
-file_.append("tumer.txt")
+file_.append("NormalData.txt")
+file_.append("tumerData.txt")
 
 with open ("dataset.txt" , "w+") as rs:
 	for i in file_:
