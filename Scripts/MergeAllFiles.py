@@ -1,10 +1,12 @@
-import os
-with open (filename.split('.')[0]+"dataset.txt",'w') as rs:
-	for filename in os.listdir(os.getcwd()):
-		if(len(filename.split('.'))==2 and filename.split('.')[1]=="txt"):
-			 with open (filename) as f:
-				 data =f.read().splitlines()
-				 for i in range(0,len(data),1):
-					 rs.write(data[i]+'\n')
-				 f.close()
-	rs.close()
+file_ =[]
+file_.append("Normal.txt")
+file_.append("tumer.txt")
+
+with open ("dataset.txt" , "w+") as rs:
+	for i in file_:
+		with open (i) as f:
+			data =f.read().splitlines()
+			for i in range(0,len(data),1):
+				 rs.write(data[i]+'\n')
+		f.close()
+rs.close()	
