@@ -5,6 +5,6 @@ with open (filename.split('.')[0]+"TumarData.txt",'w') as rs:
 			 with open (filename) as f:
 				 data =f.read().splitlines()
 				 for i in range(0,len(data),1):
-					 rs.write(data[i]+" " +'0'+'\n')
+					 rs.write(data[i]+" " +'1'+'\n')
 				 f.close()
 	rs.close()
