@@ -26,6 +26,7 @@ wget -O GSE20592_RAW.tar 'https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE2059
 #unzip all files
 gunzip *.gz
 
+#convert text files to fasta files
 python ConvertToFasta.py
 
 #catch kmers
