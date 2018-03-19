@@ -1,6 +1,4 @@
 import os
-
-
 for fn in os.listdir(os.getcwd()):
 	c=0
         if(len(filename.split('.'))==2 and filename.split('.')[2]=="txt"):
