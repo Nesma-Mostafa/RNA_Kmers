@@ -9,4 +9,4 @@ with open ("dataset.txt" , "w+") as rs:
 			for i in range(0,len(data),1):
 				 rs.write(data[i]+'\n')
 		f.close()
-rs.close()	
+	rs.close()
