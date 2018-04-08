@@ -38,6 +38,7 @@ gunzip *.gz
 python $work_dir/Scripts/ConvertToFasta.py
 
 #Cluster Data to N and T
+cd $work_dir
 mkdir -p $work_dir/N
 mkdir -p $work_dir/T
 python $work_dir/Scripts/ClusterData.py
